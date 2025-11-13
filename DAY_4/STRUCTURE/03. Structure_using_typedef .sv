@@ -1,4 +1,4 @@
-module structure;
+module structure;       // unpacked
   typedef struct {
     int id;
     string name;
