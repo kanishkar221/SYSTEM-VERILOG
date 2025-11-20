@@ -57,18 +57,20 @@ module tb_top;
     `TB_IF.en <= 1;
     #10 `TB_IF.en <= 0;
     wait(`TB_IF.ack);
-    $display("time = %0t: a=%d b=%d, out=%d", $time, inf.a,inf.b,inf.out);
+    $display("time = %0t: a=%d b=%d, out=%d", $time, inf.a,inf.b,inf.out);   //time = 15: a=  5 b=  6, out=   30
     
     #25;
     `TB_IF.a <= 'd20; `TB_IF.b <= 'd7;
     #5ns `TB_IF.en <= 1;
     #6 `TB_IF.en <= 0;
     wait(`TB_IF.ack);
-    $display("time = %0t: a=%d b=%d, out=%d", $time, inf.a,inf.b,inf.out);
+    $display("time = %0t: a=%d b=%d, out=%d", $time, inf.a,inf.b,inf.out);    //time = 54: a= 20 b=  7, out=  140
 
     #10;
     $finish;
   end
 endmodule
 
-
+OUTPUT 
+    time = 15: a=  5 b=  6, out=   30
+    time = 54: a= 20 b=  7, out=  140
