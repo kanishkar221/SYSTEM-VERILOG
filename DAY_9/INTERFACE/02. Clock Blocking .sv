@@ -1,4 +1,4 @@
-//Design
+// Design
 module multiplier(mult_if.RTL inf);
   
   always@(posedge inf.clk or posedge inf.reset) begin 
@@ -14,7 +14,7 @@ module multiplier(mult_if.RTL inf);
   end
 endmodule
 
-//Interface
+// Interface
 interface mult_if (input logic clk, reset);
   logic [7:0] a, b;
   logic [15:0] out;
@@ -32,7 +32,7 @@ interface mult_if (input logic clk, reset);
   
 endinterface
 
-// top module
+// Top module
 module tb_top;       
   bit clk;
   bit reset;
