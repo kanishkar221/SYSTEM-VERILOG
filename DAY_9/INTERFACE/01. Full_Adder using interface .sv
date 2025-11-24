@@ -1,4 +1,4 @@
-//Design Code
+// Design Code
 module half_addr(input a, b, output so, co);
   assign so = a ^ b;
   assign co = a & b;
@@ -12,13 +12,13 @@ module full_adder(fa_if inf);
   assign inf.c_out = c0 | c1;
 endmodule
 
-//Interface
+// Interface
 interface fa_if;          
   logic a, b, c;
   logic s_out, c_out;
 endinterface
 
-//Top Module
+// Top Module
 module tb_top;           
   fa_if inf();
   full_adder fa(inf);
