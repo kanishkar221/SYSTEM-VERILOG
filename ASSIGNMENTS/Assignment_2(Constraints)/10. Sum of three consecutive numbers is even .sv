@@ -16,8 +16,7 @@ module tb;
       pkt.randomize();
       sum = pkt.seq[0] + pkt.seq[1] + pkt.seq[2];
       
-      $display("Numbers = %0d, %0d, %0d  Sum = %0d",
-               pkt.seq[0], pkt.seq[1], pkt.seq[2], sum);
+      $display("Numbers = %0d, %0d, %0d  Sum = %0d", pkt.seq[0], pkt.seq[1], pkt.seq[2], sum);
     end
   end
 endmodule
