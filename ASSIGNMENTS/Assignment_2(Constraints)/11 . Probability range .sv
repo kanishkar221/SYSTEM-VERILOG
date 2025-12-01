@@ -5,7 +5,7 @@ class packet;
 
   constraint c1 {
     data dist {
-      [0  :100] := 10,
+      [0:100] := 10,
       [101:255] := 30
     };
   }
