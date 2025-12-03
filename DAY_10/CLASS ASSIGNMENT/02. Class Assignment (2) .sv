@@ -1,5 +1,3 @@
-// CODE
-
 class packet;
   bit [31:0] addr;      // class properties
   bit [31:0] data;
@@ -20,8 +18,6 @@ class packet;
     $display("pkt_type = %0s",pkt_type);
   endfunction
 endclass  
-
-// TOP MODULE
 
 module class_assignment;
   packet p1;
