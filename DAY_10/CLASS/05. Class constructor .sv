@@ -19,8 +19,6 @@ class packet;
   endfunction
 endclass
 
-// TEST BENCH
-
 module sv_constructor;
   packet pkt;
   initial begin
