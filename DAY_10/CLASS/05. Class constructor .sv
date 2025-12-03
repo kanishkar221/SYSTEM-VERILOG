@@ -1,10 +1,10 @@
 class packet;
-  bit [31:0] addr;    // class properties
+  bit [31:0] addr;     // class properties
   bit [31:0] data;
   bit write;
   string pkt_type;
   
-  function new();     // constructor
+  function new();      // constructor
     this.addr = 32'h10;
     this.data = 32'hFF;
     this.write = 1;
