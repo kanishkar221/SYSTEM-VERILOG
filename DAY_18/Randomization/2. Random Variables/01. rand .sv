@@ -12,7 +12,7 @@ module rand_var;
       void'(raf.randomize());
       $display("Iteration = %0d Random value of a = %0d",i, raf.a);
     end
-    $display("-------------------------------------");
+    $display("--------------------------------------------------");
   end
 endmodule
 
