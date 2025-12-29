@@ -14,7 +14,7 @@ module randc_var;
   end
 endmodule
 
-//OUTPUT
+// OUTPUT
 randc - It is cyclic in nature, It will repeat
 It's value after completing one cycle
 Iteration=0 Random Value=2
