@@ -78,4 +78,34 @@ module memory_pgm_data();
   end
 endmodule
 
+// OUTPUT
+Total_RAM: 6144
+No. of Programs: 7
+No. of Data blocks: 8
+No. of Spaces: 9
+Total Program size: 2424, Total data size: 712, Total space size: 3008 
 
+Program_0 is of 464 bytes
+Program_1 is of 404 bytes
+Program_2 is of 128 bytes
+Program_3 is of 400 bytes
+Program_4 is of 328 bytes
+Program_5 is of 264 bytes
+Program_6 is of 436 bytes
+Data_0 is of 80 bytes
+Data_1 is of 116 bytes
+Data_2 is of 76 bytes
+Data_3 is of 72 bytes
+Data_4 is of 72 bytes
+Data_5 is of 124 bytes
+Data_6 is of 96 bytes
+Data_7 is of 76 bytes
+Space_0 is of 512 bytes
+Space_1 is of 128 bytes
+Space_2 is of 512 bytes
+Space_3 is of 512 bytes
+Space_4 is of 128 bytes
+Space_5 is of 512 bytes
+Space_6 is of 512 bytes
+Space_7 is of 64 bytes
+Space_8 is of 128 bytes
