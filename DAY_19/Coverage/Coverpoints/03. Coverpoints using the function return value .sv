@@ -56,4 +56,4 @@ coverage % = 56.25
 a = 3, b = 1; add = 4
 coverage % = 75.00
 a = 0, b = 0; add = 0
-# KERNEL: 	coverage % = 75.00
+coverage % = 75.00
