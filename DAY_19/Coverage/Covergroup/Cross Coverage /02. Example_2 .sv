@@ -1,1 +1,37 @@
+module cross_var;
+  bit a; // 1-bit variable a
+  bit b; // 1-bit variable b
 
+  // Define a covergroup to track coverage of a and b
+  covergroup cvgrp;
+    c1: coverpoint a;  // Coverpoint for a
+    c2: coverpoint b;  // Coverpoint for b
+    c3: cross a, b;    // Cross coverage between a and b
+  endgroup
+
+  cvgrp cg; // Declare covergroup instance
+
+  initial begin
+    cg = new(); // Instantiate the covergroup
+
+    // Repeat 5 times to generate random values and sample coverage
+    repeat (5) begin
+      a = $random; // Assign random value to a
+      b = $random; // Assign random value to b
+      cg.sample(); // Sample the covergroup with new values
+
+      // Display the current values and coverage percentage
+      $display("a=%d ; b=%d ; coverage %%=%.2f", a, b, cg.get_inst_coverage());
+    end
+
+    // // Display overall coverage percentage
+    // $display("%0.2f", cg.get_coverage());
+  end
+endmodule
+
+// OUTPUT
+a=0 ; b=1 ; coverage %=45.00
+a=1 ; b=1 ; coverage %=70.00
+a=1 ; b=1 ; coverage %=70.00
+a=1 ; b=0 ; coverage %=95.00
+a=1 ; b=1 ; coverage %=95.00
