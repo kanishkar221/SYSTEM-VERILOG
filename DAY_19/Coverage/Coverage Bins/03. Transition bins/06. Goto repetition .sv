@@ -9,7 +9,7 @@ module goto_repet;
   covergroup cov_grp;
     c1 : coverpoint a {
       bins tran_1 = (1 => 4 [->3] => 5); // Matches transition from 1 to 4 occuring exactly 3 times before reaching 5
-      // bins tran_2 = (1 => 3 [=3] => 4);  // Another commented transition bin
+      // bins tran_2 = (1 => 3 [=3] => 4);  // Non - consecutive repetition(Another commented transition bin)
     }
   endgroup
   
@@ -38,4 +38,15 @@ val =  4, cov = 0.00 %
 val =  2, cov = 0.00 %
 val =  3, cov = 0.00 %
 val =  4, cov = 0.00 %
+val =  5, cov = 100.00 %
+// NON - CONSECUTIVE 
+val =  1, cov = 0.00 %
+val =  2, cov = 0.00 %
+val =  3, cov = 0.00 %
+val =  4, cov = 0.00 %
+val =  3, cov = 0.00 %
+val =  4, cov = 0.00 %
+val =  2, cov = 0.00 %
+val =  3, cov = 0.00 %
+val =  4, cov = 100.00 %
 val =  5, cov = 100.00 %
